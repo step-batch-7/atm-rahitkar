@@ -7,7 +7,7 @@ unsigned int get_money(unsigned short int amount) {
   for (int indx = 0; indx < 8; indx++)
   {
     indicator = indicator << 4;
-    indicator = indicator + (money / notes[indx]);
+    indicator = indicator | (money / notes[indx]);
     money = money % notes[indx];
   }
   

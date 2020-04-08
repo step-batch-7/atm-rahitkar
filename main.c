@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "atm.h"
 
-int main(void);
 void display_notes(unsigned int);
 
 void display_notes(unsigned int notes)
